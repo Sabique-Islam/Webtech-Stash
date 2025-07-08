@@ -86,13 +86,13 @@ Web servers store and serve web content.
 DNS translates human-readable domain names into machine-usable IP addresses.
 
 ```mermaid
-graph TD
-A[User Types URL] --> B[DNS Resolver]
-B --> C[Root Server]
-C --> D[TLD Server (.com)]
-D --> E[Authoritative Server (e.g., google.com)]
-E --> F[Returns IP Address]
-F --> G[Browser connects using IP]
+graph TD;
+    A[User Types URL] --> B[DNS Resolver];
+    B --> C[Root Server];
+    C --> D[TLD Server (.com)];
+    D --> E[Authoritative Server (e.g., google.com)];
+    E --> F[Returns IP Address];
+    F --> G[Browser connects using IP];
 ```
 
 **Process**:
