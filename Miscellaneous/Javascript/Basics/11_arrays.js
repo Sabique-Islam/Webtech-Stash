@@ -6,3 +6,10 @@ console.log(myArray2);
 
 console.log(typeof myArray1);
 console.log(typeof myArray2);
+
+const lotr = ["frodo","sam","gandalf","aragorn"];
+const hp = ["harry","ron","hermione"];
+const got = ["sansa","arya","brandon"];
+
+const allChars = [...lotr,...hp,...got];
+console.log(allChars);
