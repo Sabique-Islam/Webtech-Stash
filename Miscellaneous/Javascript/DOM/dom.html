@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM :)</title>
+
+    <style>
+        :root{
+            background-color: black;
+            color : white;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="language">
+        <li>python</li>
+        <li>javascript</li>
+        <li>java</li>
+        <li>c++</li>
+
+    </ul>
+</body>
+
+<script>
+    function addLang(langName){
+        const listItem = document.createElement("li");
+        listItem.innerHTML = langName;
+        document.querySelector(".language").appendChild(listItem)
+    }
+    addLang("julia")
+
+    function addOptimizedLang(langName){
+        const listItem = document.createElement("li");
+        listItem.appendChild(document.createTextNode(langName))
+        document.querySelector(".language").appendChild(listItem)
+    }
+    addOptimizedLang("golang")
+
+    const progLang = document.querySelector("li:nth-child(2)")
+    const newLi = document.createElement("li")
+    newLi.textContent = "c"
+    progLang.replaceWith(newLi)
+
+    const firstLang = document.querySelector("li:first-child");
+    firstLang.outerHTML = '<li>typescript</li>';
+
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove();
+</script>
+
+</html>

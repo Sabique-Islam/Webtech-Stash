@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        :root{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-black">
+        <h1 id="title">DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum minus repellendus quibusdam eos animi illo magnam dolorem voluptas? Animi fugiat aliquam maxime quam facilis recusandae hic tempora sequi corporis pariatur?</p>
+
+        <div class="parent">
+            <!-- This is a comment -->
+            <div class="day">monday</div>
+            <div class="day">tuesday</div>
+            <div class="day">wednesday</div>
+            <div class="day">thursday</div>
+            <div class="day">friday</div>
+            <div class="day">saturday</div>
+            <div class="day">sunday</div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const parentClass = document.querySelector(".parent");
+    // console.log(parentClass);
+    // console.log(parentClass.children[1]);
+    // console.log(parentClass.children[1].innerHTML);
+
+    // for(let i = 0; i < parentClass.children.length; i++){
+    //     console.log(parentClass.children[i].innerHTML);
+    // }
+
+    // console.log(parentClass.firstElementChild)
+    // console.log(parentClass.lastElementChild)
+
+    // console.log(`NODES -> ${parentClass.childNodes}`)
+
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main"
+    div.id = 39
+    div.setAttribute("title", "VEO 3")
+    div.style.backgroundColor = "blue"
+    div.style.padding = "12px"
+    // div.innerText = "DOM DOM DOM"
+    const addText = document.createTextNode("DOM DOM DOM")
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
+</script>
+
+</html>
