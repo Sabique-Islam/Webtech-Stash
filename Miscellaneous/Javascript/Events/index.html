@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        :root {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a href="https://www.google.com">Google</a></li>
+        </ul>
+    </div>
+    
+</body>
+
+<script>
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altKey, ctrlKey, shiftKey, keyCode
+
+    const images = document.querySelectorAll("img");
+    images.forEach((image) => {
+        image.addEventListener("click", (e) => {
+            //alert("Image clicked");
+            let removeIt = e.target.parentNode;
+            removeIt.remove();
+        }, false)
+    })
+
+    // document.getElementById("river").addEventListener("click", (e) => {
+    //     alert("River Clicked");
+    //     e.stopPropagation();
+    // }, false)
+</script>
+
+</html>
