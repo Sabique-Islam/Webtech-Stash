@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Placement Form</title>
+</head>
+<body>
+  <h1>Placement Form</h1>
+  <form action="get" method="GET">
+    <!-- Name -->
+    <div class="form-group">
+      <label for="name">Student Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <!-- SRN -->
+    <div class="form-group">
+      <label for="srn">SRN:</label>
+      <input type="text" id="srn" name="srn" required>
+    </div>
+
+    <!-- College & Address -->
+    <div class="form-group">
+      <label for="college">College Name & Address:</label>
+      <textarea id="college" name="college" rows="4" required></textarea>
+    </div>
+
+    <!-- Department -->
+    <div class="form-group">
+      <label>Department:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="department" value="CSE"> CSE</label>
+        <label><input type="checkbox" name="department" value="ECE"> ECE</label>
+        <label><input type="checkbox" name="department" value="MECH"> MECH</label>
+      </div>
+    </div>
+
+    <!-- Semester -->
+    <div class="form-group">
+      <label>Semester:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="semester" value="IV"> IV</label>
+        <label><input type="radio" name="semester" value="V"> V</label>
+        <label><input type="radio" name="semester" value="VI"> VI</label>
+      </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="form-actions">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+</body>
+</html>

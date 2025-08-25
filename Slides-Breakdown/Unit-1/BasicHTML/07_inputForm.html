@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>New Input Types</title>
+    </head>
+    <body>
+        <!-- Forms-->
+        <!-- <fieldset></fieldset>,<legend></legend>, email,url,number,range,date pickers,
+         time,tel,color,range – HTML5 input widgets for validate the form           -->
+
+                     
+         <fieldset> 
+            <form action="/page.php">
+            <legend> Students Details</legend>
+            First Name: <input type="text" name="fname"> <br> <br>
+            Last Name: <input type="text" name="lname" value="Dr.Sharavana"> <br> <br>
+            Email: <input type="email"name="user_Email"><br><br>
+            HomePage: <input type="url" name="user_url"><br><br>
+            
+            <input type="radio" name="branch" value="CSE"> CSE
+            <input type="radio" name="branch" value="ECE"> ECE
+            <input type="radio" name="branch" value="Mech"> MECH <br><br>
+            Semester:
+            <input type="checkbox" name="sem" value="III"> 3rd Semester
+            <input type="checkbox" name="sem" value="V"> 5th Semester
+            <input type="checkbox" name="sem" value="7th"> 7th Semester
+            <br><br> 
+
+            </fieldset>
+            <fieldset>
+            Select Number:
+            <input type="number" name="phno" min="1" max="10"> <br> <br>
+            Birthday:
+            <input type="date" name="birthday"> <br><br>
+            Favorite Color:
+            <input type="color" name="Fcolor"><br><br>
+            Sports Interest(0-10):
+            <input type="range" name="vol" min="0" max="10"> <br> <br>
+            </fieldset>
+            Time:
+            <input type="time" name="tt"> <br> <br>
+            Tel:
+            <input type="tel" name="phone" placeholder="10 digits" pattern="[0-9]{10}" required> <br> <br>
+            <!-- Specifies that the input is for a telephone number.
+            Browsers may show a numeric keypad on mobile devices for easier input. -->
+            <!-- Assigns the field name as "phone".
+            This is the key used when sending the form data to the server -->
+            <!-- Displays a light hint text inside the input box telling the user
+             what to enter (10 digits in this case).This text disappears when the 
+             user starts typing. -->
+             <!-- A regular expression patternThis means: only digits (0–9), and exactly 10 digits ({10} = length must be 10). -->
+            <input type="submit" Value="Submit"> <br> <br>
+            <input type="reset" value="Reset"> <br> <br>
+            </form>
+    </body>
+</html>
+
