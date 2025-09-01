@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 3</title>
+</head>
+
+<body>
+    <p>Subjects</p>
+    <ul>
+        <li class="gl">Subject 1</li>
+        <li class="gl">Subject 2</li>
+        <li class="gl">Subject 3</li>
+    </ul>
+    <button onclick="init()">Click Me</button>
+</body>
+
+<script>
+    function init(){
+        p1 = document.querySelector("p");
+        p1.style.color = "blue";
+        list = document.querySelectorAll("li.gl");
+        for(var i=0; i<list.length; i++){
+            list[i].innerHTML = list[1].innerHTML.toUpperCase();
+
+            newsub = document.createElement("li");
+            newsub.className = "gl";
+            newsub.innerHTML = "New Item";
+            ul1 = document.querySelector("ul");
+            ul1.appendChild(newsub);
+            ul1.insertBefore(newsub, ul1.firstChild);
+        }
+    }
+</script>
+
+</html>

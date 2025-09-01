@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 2</title>
+</head>
+<body>
+    <h1 id="demo">Some text.</h1>
+    <button onclick="changeText()">Click me</button>
+    <h2>Web Page</h2>
+    <div class="example">1st Sem</div>
+    <div class="example">2nd Sem</div>
+    <div class="example">3rd Sem</div>
+    <button onclick="myFunction()">Change All</button>
+</body>
+<script>
+    function changeText() {
+        let element = document.getElementById("demo");
+        element.textContent = "Text changed!";
+    }
+
+    document.getElementById("example").innerHTML = "Gang";
+    function myFunction() {
+        var x = document.getElementsByClassName("example");
+        for (var i = 0; i < x.length; i++) {
+            x[i].innerHTML = "Changed!";
+        }
+    }
+</script>
+</html>
