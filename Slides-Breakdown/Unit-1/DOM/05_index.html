@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 5</title>
+</head>
+<body>
+    <h1 id="title">Heading</h1>
+    <p class="text">Hello 1</p>
+    <p class="text">Hello 2</p>
+    <p class="text">Hello 3</p>
+    <p class="text">Hello 4</p>
+    <button>Click Me</button>
+</body>
+
+<script>
+    let h = document.getElementById("title");
+    console.log(h.innerHTML);
+
+    let ps = document.getElementsByClassName("text");
+    console.log(ps[0].innerHTML);
+    console.log(ps[1].innerHTML);
+
+    let buttons = document.getElementsByTagName("button")
+    console.log(buttons[0].innerHTML);
+
+    let firstPara = document.querySelector(".text");
+    console.log(firstPara.innerHTML);
+
+
+    let allPara = document.querySelectorAll(".text");
+    allPara.forEach(p => console.log(p.innerHTML));
+</script>
+</html>

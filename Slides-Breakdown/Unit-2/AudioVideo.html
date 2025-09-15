@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title> Video and Audio</title>
+	
+	</head>
+		<script>
+		
+		function init(){
+		 v1=document.querySelector("#v1");
+		 v1.play();
+		 setInterval(fun,10000);
+		 }
+		function fun() {
+		tmp=Math.floor(Math.random()*(v1.duration-5));
+		console.log(tmp);
+		v1.currentTime=tmp;
+		
+		}
+		function init1(){
+			
+		p1=document.querySelector("#p");
+		p1.value+=20;
+		if(p1.value!=100)
+		setInterval(init1,2000);
+		}
+		
+		
+	</script>
+
+<body onload="init()">
+		<!-- Calls init() function when the page loads -->
+<h2> Video Element </h2>
+	<video id="v1"  autoplay muted controls="c1" height="400px" width="400px">
+	<source src="Avengers.mp4" type="video/mp4"/>
+	</video>
+<h2> Audio Element </h2>
+	    <audio preload id="a1"  controls="c2" >
+	<source src="BestSongEver.mp3" type="audio/mp3"/>
+	</audio>		
+<h2> Progress Element </h2>
+	<label for="p1"> Progress done on activity</label>
+	<!-- Progress bar with initial value 30 out of max 100 -->
+	<progress id="p" value="30" max="100">
+	</progress>
+
+
+</body>
+</html>
+
+<!-- When page loads (onload="init()")
+Video (#v1) starts playing automatically.
+Every 5 seconds, the function fun() is called.
+Inside fun()
+
+A random number (time) is generated.
+The video jumps to that random time → so it plays from random positions.
+
+Progress bar (init1())
+Starts at value 30.
+Each second, it increases by 20.
+When it reaches 100, it stops. -->

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="256" height="256" role="img" aria-label="Running man icon">
+  <title>Running Man</title>
+
+  <!-- dark rounded square background -->
+  <rect x="2" y="2" width="96" height="96" rx="16" ry="16" fill="#0b0b0b"/>
+
+  <!-- running man moved to centre -->
+  <g fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"
+     transform="translate(50,50) scale(0.8)"> 
+    <!-- draw man around (0,0) -->
+    <circle cx="0" cy="-18" r="6" fill="#ffffff" stroke="none"/>
+    <path d="M0 -12 L0 0"/>
+    <path d="M0 -8 C12 -6 20 -10 26 -14"/>
+    <path d="M0 -6 C-8 -4 -12 0 -16 6"/>
+    <path d="M0 0 C6 12 18 18 26 22"/>
+    <path d="M0 0 C-8 12 -16 20 -18 30"/>
+  </g>
+</svg>
