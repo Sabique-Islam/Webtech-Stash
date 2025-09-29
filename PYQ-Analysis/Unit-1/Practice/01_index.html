@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Canvas</title>
+    </head>
+    <body>
+        <canvas id="mycanvas" width="1000" height="1000"></canvas>
+
+        <script>
+            let canv = document.getElementById("mycanvas");
+            let context = canv.getContext("2d");
+
+            context.fillStyle = "#000000";
+            context.fillRect(10,10,1000,1000);
+        </script>
+    </body>
+</html>

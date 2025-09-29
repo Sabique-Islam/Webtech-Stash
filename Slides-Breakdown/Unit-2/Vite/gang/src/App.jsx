@@ -1,30 +1,13 @@
 import './App.css'
+import ReactDOM from 'react-dom/client';
 
-function App() {
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App name="Big Smoke"/>)
 
-  const users = [
-    { id: 1, name: 'Alice' },
-    { id: 2, name: 'Bob' },
-    { id: 3, name: 'Charlie' },
-  ]
-
+function App(props) {
   return (
-    <>
-    {/* <span className='header'>Fill It !!!</span>
-    <form className='form'>
-      <input type="text" placeholder='Username' />
-      <input type="password" placeholder='Password' />
-      <button type='submit'>Submit</button>
-    </form> */}
-
-    <h2>User List</h2>
-    <ul>
-      {users.map(user => (
-        <li key={user.id}>{user.name}</li>
-      ))}
-    </ul>
-    </>
-  )
+    <h1>Hello {props.name}!</h1>
+  );
 }
 
-export default App
+export default App;

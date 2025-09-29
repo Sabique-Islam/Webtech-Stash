@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Where u gang?</title>
+    </head>
+
+    <body>
+        <div id="info"></div>
+    </body>
+
+    <script>
+        const locationId = document.getElementById("info");
+        navigator.geolocation.getCurrentPosition((index)=>{
+            const latitude = index.coords.latitude;
+            const longitude = index.coords.longitude;
+
+            locationId.innerHTML = (`Latitude = ${latitude}, Longitude = ${longitude}`);
+        })
+    </script>
+</html>
