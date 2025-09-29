@@ -2,7 +2,7 @@ import ResImage from './ResImage'
 import ResCaption from './ResCaption'
 import ResLink from './ResLink'
 
-function SrchResult() {
+function SrchResult({props}) {
   return (
     <div>
       <h2>Search Results</h2>
