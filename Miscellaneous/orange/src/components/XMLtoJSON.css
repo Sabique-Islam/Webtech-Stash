@@ -1,0 +1,87 @@
+.xml-json-container {
+  background: #000000;
+  border: 2px solid #ff6a00;
+  border-radius: 15px;
+  padding: 2rem;
+  color: white;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.xml-title {
+  color: #ff6a00;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.converter-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.xml-section {
+  background: #000000;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+
+.xml-section h3 {
+  color: #ff6a00;
+  margin-bottom: 1rem;
+}
+
+.xml-content {
+  background: #000;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  overflow-x: auto;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  margin-bottom: 1rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.convert-btn {
+  background: #ff6a00;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.json-section {
+  background: #000000;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+
+.json-section h3 {
+  color: #ff6a00;
+  margin-bottom: 1rem;
+}
+
+.json-content {
+  background: #000;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  overflow-x: auto;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  max-height: 400px;
+  overflow-y: auto;
+}

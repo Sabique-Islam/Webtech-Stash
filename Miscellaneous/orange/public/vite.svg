@@ -1,0 +1,12 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Black background -->
+  <rect width="100" height="100" fill="#000" rx="15"/>
+
+  <!-- Orange circular dashboard outline -->
+  <circle cx="50" cy="50" r="40" fill="none" stroke="#FF6A00" stroke-width="4"/>
+
+  <!-- White airplane silhouette -->
+  <path d="M50 20 L55 50 L50 45 L45 50 Z" fill="#fff"/>
+  <rect x="49" y="50" width="2" height="20" fill="#fff"/>
+  <polygon points="48,70 52,70 50,75" fill="#fff"/>
+</svg>

@@ -1,0 +1,40 @@
+.location-card {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  border: 2px solid #ff6a00;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.location-title {
+  color: #ff6a00;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.location-btn {
+  background-color: #ff6a00;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.location-btn:disabled {
+  background-color: #000000;
+  cursor: not-allowed;
+}
+
+.location-coords {
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+}

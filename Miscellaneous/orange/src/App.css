@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.location-weather-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .location-weather-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
