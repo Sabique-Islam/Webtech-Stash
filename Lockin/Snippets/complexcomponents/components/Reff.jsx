@@ -9,7 +9,7 @@ const Reff = () => {
     const btnRef = useRef();
 
     useEffect(()=>{
-        btnRef.current.style.backgroundColor = "blue"
+        btnRef.current.style.backgroundColor = "red"
     },[])
 
     useEffect(()=>{
