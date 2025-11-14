@@ -1,0 +1,30 @@
+.profile-menu-header {
+  padding: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-name {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.25rem;
+}
+
+.profile-email {
+  font-size: var(--font-size-xs);
+  color: var(--text-light);
+}
+
+.logout-item {
+  color: var(--danger);
+}
+
+.logout-item:hover {
+  background-color: rgba(231, 76, 60, 0.04);
+}

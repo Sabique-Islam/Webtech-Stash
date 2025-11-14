@@ -1,0 +1,56 @@
+
+=== Running example code (executes demo) ===
+
+--- demo start ---
+created object: Counter(3)
+after inc: Counter(5)
+add(4,5) -> 9
+countdown: [5, 4, 3, 2, 1, 'blastoff']
+-1 -> negative
+0 -> zero
+5 -> small
+20 -> large
+--- demo end ---
+
+=== Static analysis of example file ===
+
+Analysis of /home/savvyhex/College/AFLL/examples/code_example.py
+Functions:
+  - __init__ (line 10)
+  - inc (line 13)
+  - __repr__ (line 16)
+  - categorize (line 20)
+  - add (line 32)
+  - countdown (line 37)
+  - demo (line 47)
+Classes:
+  - Counter (line 9)
+If / elif / else ladders:
+  - at line 22: chain length 3, has else=True
+  - at line 24: chain length 2, has else=True
+  - at line 26: chain length 1, has else=True
+While loops:
+  - while at line 40
+Calls (potential object creations shown if name matches a class defined here):
+  - append at line 41
+  - append at line 43
+  - print at line 48
+  - Counter at line 51 (object creation)
+  - print at line 52
+  - inc at line 55
+  - print at line 56
+  - add at line 59
+  - print at line 60
+  - print at line 63
+  - countdown at line 63
+  - print at line 67
+  - categorize at line 67
+  - print at line 69
+  - demo at line 73
+
+Summary:
+  functions: 7
+  classes: 1
+  if-ladders: 3
+  while-loops: 1
+  object-creations: 1

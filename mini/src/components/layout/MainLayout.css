@@ -1,0 +1,25 @@
+.main-layout {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--light-bg);
+}
+
+.layout-content {
+  display: flex;
+  padding-top: 65px; /* TopNav height */
+}
+
+.page-content {
+  flex: 1;
+  margin-left: 220px; /* SideNav width */
+  padding: var(--spacing-lg);
+  min-height: calc(100vh - 65px);
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    margin-left: 0;
+    padding: var(--spacing-sm);
+  }
+}

@@ -1,0 +1,54 @@
+.notification-menu-header {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.notification-menu-header h3 {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  color: var(--primary-blue);
+}
+
+.notification-item {
+  width: 100%;
+  padding: var(--spacing-xs) 0;
+}
+
+.notification-title {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.25rem;
+}
+
+.notification-message {
+  font-size: var(--font-size-xs);
+  color: var(--text-light);
+  margin-bottom: 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.notification-time {
+  font-size: var(--font-size-xs);
+  color: var(--text-light);
+}
+
+.MuiMenuItem-root.unread {
+  background-color: rgba(26, 61, 124, 0.04);
+}
+
+.no-notifications {
+  font-size: var(--font-size-sm);
+  color: var(--text-light);
+  text-align: center;
+  width: 100%;
+}
+
+.view-all {
+  border-top: 1px solid var(--border-color);
+  justify-content: center;
+  color: var(--primary-blue);
+  font-weight: 600;
+}

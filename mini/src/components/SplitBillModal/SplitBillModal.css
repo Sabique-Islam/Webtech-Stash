@@ -1,0 +1,27 @@
+.participants-section {
+  margin-top: var(--spacing-md);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.section-header h4 {
+  margin: 0;
+  font-size: var(--font-size-base);
+  color: var(--text-dark);
+}
+
+.participant-row {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.participant-row .MuiTextField-root {
+  flex: 1;
+}

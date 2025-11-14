@@ -1,0 +1,99 @@
+.transactions-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.filters-bar {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.transactions-table {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.transactions-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions-table thead {
+  background-color: var(--light-bg);
+}
+
+.transactions-table th {
+  padding: var(--spacing-md);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--text-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.transactions-table td {
+  padding: var(--spacing-md);
+  border-top: 1px solid var(--border-color);
+  font-size: var(--font-size-base);
+}
+
+.transactions-table tbody tr:hover {
+  background-color: var(--light-bg);
+}
+
+.amount-col {
+  text-align: right;
+  font-weight: 600;
+}
+
+.amount-col.expense {
+  color: var(--danger);
+}
+
+.amount-col.income {
+  color: var(--success);
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+}
+
+.type-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.type-badge.expense {
+  background-color: rgba(231, 76, 60, 0.1);
+  color: var(--danger);
+}
+
+.type-badge.income {
+  background-color: rgba(39, 174, 96, 0.1);
+  color: var(--success);
+}
+
+@media (max-width: 768px) {
+  .transactions-table {
+    overflow-x: auto;
+  }
+
+  .transactions-table table {
+    min-width: 600px;
+  }
+}

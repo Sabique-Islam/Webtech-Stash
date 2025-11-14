@@ -1,0 +1,71 @@
+.stat-card {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: flex-start;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  font-size: 24px;
+}
+
+.stat-card-primary .stat-icon {
+  background-color: rgba(26, 61, 124, 0.1);
+  color: var(--primary-blue);
+}
+
+.stat-card-success .stat-icon {
+  background-color: rgba(39, 174, 96, 0.1);
+  color: var(--success);
+}
+
+.stat-card-warning .stat-icon {
+  background-color: rgba(243, 156, 18, 0.1);
+  color: var(--warning);
+}
+
+.stat-card-danger .stat-icon {
+  background-color: rgba(231, 76, 60, 0.1);
+  color: var(--danger);
+}
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-title {
+  font-size: var(--font-size-sm);
+  color: var(--text-light);
+  font-weight: 500;
+  margin: 0 0 var(--spacing-xs) 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.stat-subtitle {
+  font-size: var(--font-size-xs);
+  color: var(--text-light);
+  margin: 0;
+}

@@ -1,0 +1,56 @@
+.savings-progress {
+  padding: var(--spacing-md);
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.progress-header h4 {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.progress-percentage {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--success);
+}
+
+.progress-details {
+  margin-top: var(--spacing-sm);
+}
+
+.progress-amounts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-xs);
+}
+
+.current-amount,
+.target-amount {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size-xs);
+  color: var(--text-light);
+}
+
+.goal-reached {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--success);
+}
